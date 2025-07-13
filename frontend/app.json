@@ -4,8 +4,8 @@
     "slug": "Collage Chatbot",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/img/logo.jpg",
+    "userInterfaceStyle": "black",
     "jsEngine": "hermes",
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -15,7 +15,7 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#202020"
     },
     "ios": {
       "supportsTablet": true
