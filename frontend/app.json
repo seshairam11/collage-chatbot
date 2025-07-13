@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "frontend",
-    "slug": "frontend",
+    "name": "Collage chatbot",
+    "slug": "Collage chatbot",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,17 +27,20 @@
         "permissions": [
           "ACCESS_FINE_LOCATION",
           "ACCESS_COARSE_LOCATION",
+          "FOREGROUND_SERVICE",
+          "ACCESS_FINE_LOCATION",
+          "ACCESS_COARSE_LOCATION",
           "FOREGROUND_SERVICE"
         ]
       },
-      "package": "com.sessh.chatbot"
+      "package": "com.sessh.collagechatbot"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "bc3023a2-f365-4f11-be7f-e5bb1e8f7f7e"
+        "projectId": "a8b632ad-9241-4327-ae68-ae0ff630ec68"
       }
     }
   }

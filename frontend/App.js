@@ -27,6 +27,7 @@ const App = () => {
 
   // Get current route
   const getCurrentRouteName = () => {
+    console.log('Current route:', navigationRef.current?.getCurrentRoute()?.name);
     return navigationRef.current?.getCurrentRoute()?.name;
   };
 
