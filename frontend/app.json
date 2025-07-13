@@ -6,6 +6,11 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "jsEngine": "hermes",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "developmentClient": true,
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
@@ -24,10 +29,16 @@
           "ACCESS_COARSE_LOCATION",
           "FOREGROUND_SERVICE"
         ]
-      }
+      },
+      "package": "com.sessh.chatbot"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bc3023a2-f365-4f11-be7f-e5bb1e8f7f7e"
+      }
     }
   }
 }
