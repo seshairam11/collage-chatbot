@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Collage chatbot",
-    "slug": "Collage chatbot",
+    "name": "Collage Chatbot",
+    "slug": "Collage Chatbot",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,8 +22,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/img/logo.jpg",
+        "backgroundColor": "#202020",
         "permissions": [
           "ACCESS_FINE_LOCATION",
           "ACCESS_COARSE_LOCATION",
@@ -36,7 +36,7 @@
       "package": "com.sessh.collagechatbot"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/img/logo.jpg"
     },
     "extra": {
       "eas": {

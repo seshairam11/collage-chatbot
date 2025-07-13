@@ -86,6 +86,7 @@ export default function ChatScreen({ cleanChat, setCleanChat }) {
                 <FlatList
                     ref={flatListRef} // ✅ Reference to FlatList
                     data={messages}
+                    style={{ flex: 1, marginTop: 10 }}
                     keyExtractor={(item, index) => index.toString()}
                     renderItem={({ item }) => (
                         <View style={item.role === "user" ? styles.userText : styles.botText}>
@@ -97,7 +98,7 @@ export default function ChatScreen({ cleanChat, setCleanChat }) {
                     onContentSizeChange={() => flatListRef.current?.scrollToEnd({ animated: true })}
                     showsVerticalScrollIndicator={false}
                 />
-                <View style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: "#303030", minHeight: 60, borderRadius: 20, paddingHorizontal: 10, }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: "#303030", minHeight: 60, borderRadius: 20, paddingHorizontal: 10,marginBottom: 10, }}>
                     <TextInput
                         style={{ flex: 1, padding: 8, color: "white" }} // Add necessary styles
                         placeholder="Ask your question..."
