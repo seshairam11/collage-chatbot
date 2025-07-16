@@ -1,0 +1,131 @@
+first wee need to upgrade all the dependencies to its max 
+
+	npx expo install --check 
+
+--check is for seeing the current version and available version
+
+
+
+
+
+
+and add those dependencies
+
+npm install react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-svg
+
+
+
+
+
+
+if your using eas build create the eas.json and add this 
+
+{
+  "cli": {
+    "version": ">= 16.14.1",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
+
+if we don't create it, its automatialy create it but the format is not in apk,  it was in aab format
+
+
+
+
+
+
+or 
+
+
+
+
+
+we can created internally in the system with...,
+ install the Eclipse Adoptium
+
+$env:JAVA_HOME="C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot"  # Adjust this if installed elsewhere
+$env:PATH="$env:JAVA_HOME\bin;$env:PATH"
+
+
+
+
+
+
+
+pls change the file path and check with this commend
+
+java -version
+
+
+when its works it will show like this 
+
+openjdk version "17.0.15" 2025-04-15 
+OpenJDK Runtime Environment Temurin-17.0.15+6 (build 17.0.15+6)
+OpenJDK 64-Bit Server VM Temurin-17.0.15+6 (build 17.0.15+6, mixed mode, sharing)
+
+
+
+
+
+
+make a prebuild 
+
+npx expo prebuild
+
+
+
+
+
+
+
+and change the directory to android
+
+cd android
+
+
+
+
+
+
+
+to create the apk use this commend
+
+.\gradlew.bat clean
+.\gradlew.bat app:assembleRelease -x lint -x test --configure-on-demand --build-cache -PreactNativeDevServerPort=8081
+
+
+
+
+
+
+add path \frontend\android\app\build\outputs\apk\release
+
+apk name was app-release.apk
+
+
+
+
+
+
+
+

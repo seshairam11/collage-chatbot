@@ -5,6 +5,7 @@ const { loginController } = require('../controllers/loginController');
 const { UpdateUserDetails } = require('../controllers/UpdateUserDetails');
 const { liveChat } = require('../controllers/chatController');
 const { passageController, listPassageController, updatePassageController, deletePassageController} = require('../controllers/passageController');
+const { testController } = require('../controllers/testController');
 
 
 router.route('/signup').post(signupController);
@@ -15,6 +16,7 @@ router.route('/createpassage').post(passageController);
 router.route('/listpassage').post(listPassageController);
 router.route('/updatepassage').post(updatePassageController);
 router.route('/deletepassage').post(deletePassageController);
+router.route('/test').get(testController);
 
 
 

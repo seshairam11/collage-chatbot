@@ -66,7 +66,7 @@ const App = () => {
         <StatusBar backgroundColor="black" style="light" />
 
         <View style={styles.content}>
-         <Stack.Navigator initialRouteName="entry" screenOptions={{ headerShown: false }}>
+          <Stack.Navigator initialRouteName={appState.isAuth == true ? "home" : "entry"} screenOptions={{ headerShown: false }}>
             <Stack.Screen name="entry" component={Entry} />
             <Stack.Screen
               name="home"
